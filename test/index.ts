@@ -1,10 +1,10 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
 
-describe("AEthSplitter", function () {
+describe("EthSplitter", function () {
   it("Should return the new splitter once it's changed", async function () {
-    const AEthSplitter = await ethers.getContractFactory("AEthSplitter");
-    const splitter = await AEthSplitter.deploy();
+    const EthSplitter = await ethers.getContractFactory("EthSplitter");
+    const splitter = await EthSplitter.deploy();
     await splitter.deployed();
   });
 });

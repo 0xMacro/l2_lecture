@@ -17,10 +17,10 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const AEthSplitter = await ethers.getContractFactory("AEthSplitter");
+  const EthSplitter = await ethers.getContractFactory("EthSplitter");
 
   const [signer] = await ethers.getSigners();
-  const splitter = (await AEthSplitter.connect(signer)).attach(SPLITTER_ADDRESS);
+  const splitter = (await EthSplitter.connect(signer)).attach(SPLITTER_ADDRESS);
 
   const addrs = [
 "0x85Df0EFEd48Bb24Cd54E339F67706b76132f651C",
